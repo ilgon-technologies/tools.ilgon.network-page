@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <title>React App</title>
+    <style>
+      .bridge_cont1__1x2N9 {
+        background-color: #1b1b28;
+        border-radius: 10px;
+      }
+      .bridge_cont1__1x2N9 {
+        padding: 20px;
+        height: 100%;
+        max-width: 700px;
+      }
+      .app_logo__2B4qm {
+        margin-right: 20px;
+      }
+      .app_side_text__kw3ro {
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+        color: #fff;
+      }
+      .app_nav_1__3l5Ce {
+        display: flex;
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .app_nav_1__3l5Ce:hover {
+        background: #131313;
+      }
+      #app_sidebar-wrapper__36Oaj {
+        background-color: #1b1b28;
+      }
+      #app_wrapper__3jdfE {
+        overflow-x: hidden;
+      }
+      #app_sidebar-wrapper__36Oaj {
+        min-height: 100vh;
+        margin-left: -20rem;
+        transition: margin 0.25s ease-out;
+        margin-right: 10px;
+      }
+      #app_sidebar-wrapper__36Oaj .app_sidebar-heading__2gWPx {
+        padding: 0.875rem 1.25rem;
+        font-size: 1.2rem;
+        color: #fff;
+      }
+      #app_page-content-wrapper__TZNPq {
+        min-width: 100vw;
+      }
+      .app_togglebtn__3qz7m {
+        transition: 0.3s;
+        background-color: "#383848";
+      }
+      .app_topcont__14pHo {
+        z-index: -1000;
+      }
+      .app_togglebtn__3qz7m:hover {
+        border-color: #a3b6f8;
+      }
+      @media (min-width: 768px) {
+        #app_sidebar-wrapper__36Oaj {
+          margin-left: 0;
+        }
+        #app_page-content-wrapper__TZNPq {
+          min-width: 0;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div style="background-color: black">
+        <div class="d-flex" id="app_wrapper__3jdfE">
+          <div class="border-end" id="app_sidebar-wrapper__36Oaj">
+            <div class="app_sidebar-heading__2gWPx border-bottom">Menu</div>
+            <div class="app_list-group__3WIKilist-group-flush">
+              <a href="/token-creator" style="text-decoration: none">
+                <div class="app_nav_1__3l5Ce">
+                  <div>
+                    <img src="/images/coins.png" width="40" class="app_logo__2B4qm" alt="" />
+                  </div>
+                  <div class="app_side_text__kw3ro">Token Creator</div>
+                </div>
+              </a>
+              <a href="/bridge" style="text-decoration: none">
+                <div class="app_nav_1__3l5Ce">
+                  <div>
+                    <img src="/images/crosschain.svg" width="40" class="app_logo__2B4qm" alt="" />
+                  </div>
+                  <div class="app_side_text__kw3ro">Bridge</div>
+                </div>
+              </a>
+              <a href="/pancake" style="text-decoration: none" aria-current="page" class="active">
+                <div class="app_nav_1__3l5Ce">
+                  <div>
+                    <img src="/images/pancakeswap.svg" width="40" class="app_logo__2B4qm" alt="" />
+                  </div>
+                  <div class="app_side_text__kw3ro">Pancake</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="app_page-content-wrapper__TZNPq">
+            <nav class="navbar navbar-expand-lg navbar-dark app_topcont__14pHo">
+              <div class="container-fluid">
+                <button
+                  class="btn app_togglebtn__3qz7m"
+                  id="sidebarToggle"
+                  style="background-color: rgb(56, 56, 72)"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </nav>
+            <div class="container-fluid">
+              <div class="row justify-content-evenly">
+                <div class="col col-md-auto mb-2 bridge_cont1__1x2N9">
+                  <div class="row justify-content-md-center mb-4">
+                    <h3 class="text-center text-white">Buy WILG on PancakeSwap</h3>
+                  </div>
+                  <div class="row justify-content-md-center m-3">
+                    <div class="col text-center">
+                      <iframe
+                        title="poocoin"
+                        src="https://poocoin.app/embed-swap?outputCurrency=0x8c01dFbCBCa328F3B379957BD93B992388EdcbEB"
+                        width="420"
+                        height="600"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
