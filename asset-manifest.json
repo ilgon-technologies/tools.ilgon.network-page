@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c401ad8.css",
-    "main.js": "/static/js/main.12935e12.js",
+    "main.css": "/static/css/main.160dedc1.css",
+    "main.js": "/static/js/main.a8a752fe.js",
     "static/media/ilgon.png": "/static/media/ilgon.68dc59fe6f2451cdc71d.png",
     "index.html": "/index.html",
-    "main.8c401ad8.css.map": "/static/css/main.8c401ad8.css.map",
-    "main.12935e12.js.map": "/static/js/main.12935e12.js.map"
+    "main.160dedc1.css.map": "/static/css/main.160dedc1.css.map",
+    "main.a8a752fe.js.map": "/static/js/main.a8a752fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c401ad8.css",
-    "static/js/main.12935e12.js"
+    "static/css/main.160dedc1.css",
+    "static/js/main.a8a752fe.js"
   ]
 }
